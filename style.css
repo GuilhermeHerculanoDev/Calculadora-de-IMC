@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+}
+
+#container {
+  margin-top: 2%;
+}
+
+#containerInputs {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+label {
+  text-align: left;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+  padding: 8px;
+  outline: none;
+
+}
+
+input::placeholder {
+  padding-left: 4px;
+  opacity: 0.32;
+}
+
+button {
+  width: 520px;
+  padding: 5px;
+  color: white;
+  border: none;
+  background-color: #ec5c84;
+  padding: 9px;
+  border-radius: 4px;
+}
+
+.sim {
+  display: block;
+  height: 0px;
+  visibility: hidden;
+  transition: .6s;
+  overflow-y: hidden;
+  margin-top: 10px;
+}
+
+.open {
+  visibility: visible;
+  height: 100vh;
+  overflow-y: auto;
+  transition: .6s;
+}
+
+
+#tableResult {
+  display: none;
+  font-size: 15px;
+  border-collapse: collapse;
+  margin: auto;
+  width: 300px;
+  border: none;
+}
+
+
+#tableResult th {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+#tableResult th,
+td {
+  border: none;
+  padding: 10px;
+}
+
+
+#tableResult td {
+  border: none;
+  border-top: 1px solid #ec5c84;
+  text-align: center;
+}
+
+
+#tableList {
+  display: none;
+  font-size: 14px;
+  border-collapse: collapse;
+  margin: auto;
+  background-color: #f9f9f9;
+  width: 300px;
+  border: 1px solid #eee;
+}
+
+
+#tableList th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+
+#tableList th {
+  background-color: #eee6e8;
+  color: #ec5c84;
+  text-align: start;
+  width: 50%;
+}
+
+
+.tdEscuro {
+  background-color: #eee6e8;
+}
+
+@media (max-width: 600px) {
+  #container {
+    margin-top: 20px;
+  }
+
+
+  input {
+    width: 70%;
+    padding: 8px;
+  }
+
+
+  #tableList {
+    width: 50%;
+    font-size: 14px;
+  }
+
+
+  button {
+    width: 72.5%;
+    padding: 5px;
+    color: white;
+    border: none;
+    background-color: #ec5c84;
+    padding: 9px;
+  }
+
+
+  #tableResult {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

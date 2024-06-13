@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora de IMC</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="containerInputs">
+            <input type="number" id="inputWidht" placeholder="Altura">
+
+            <input type="number" id="inputPeso" placeholder="Peso">
+            <button onclick="pegarValores()">Calcular</button>
+        </div>
+
+        <div class="sim">
+
+            <table border="1" id="tableResult">
+                <tr>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>IMC</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td id="peso">gh</td>
+                    <td id="altura">y</td>
+                    <td id="imc">y</td>
+                    <td id="resultado">yyu</td>
+                </tr>
+            </table>
+
+
+            <table border="1" id="tableList">
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                </tr>
+                <tr>
+                    <td>Menos de 17</td>
+                    <td>Muito abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td class="tdEscuro">17 a 18,4</td>
+                    <td class="tdEscuro">Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>18,5 a 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td class="tdEscuro">25 a 29,9</td>
+                    <td class="tdEscuro">Acima do peso</td>
+                </tr>
+                <tr>
+                    <td>30 a 34,9</td>
+                    <td>Obesidade grau I</td>
+                </tr>
+                <tr>
+                    <td class="tdEscuro">35 a 40</td>
+                    <td class="tdEscuro">Obesidade grau II</td>
+                </tr>
+                <tr>
+                    <td>Maior que 40</td>
+                    <td>Obesidade grau III</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
